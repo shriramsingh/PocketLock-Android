@@ -18,7 +18,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
-            android:theme="@style/Theme.PocketLock"
+            android:theme="@style/Theme.App.Starting"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +43,7 @@
         <service
             android:name=".PocketTileService"
             android:label="Pocket Lock"
-            android:icon="@android:drawable/ic_secure"
+            android:icon="@drawable/ic_tile_pocketlock"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE"
             android:exported="true">
             <intent-filter>

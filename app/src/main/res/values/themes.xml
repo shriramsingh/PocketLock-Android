@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Main Application Theme (Using standard Android Material theme to avoid linking issues) -->
+    <style name="Theme.PocketLock" parent="android:Theme.Material.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/brand_dark</item>
+    </style>
 
-    <style name="Theme.PocketLock" parent="android:Theme.Material.Light.NoActionBar" />
+    <!-- Modern Splash Screen Theme -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Background of the splash screen -->
+        <item name="windowSplashScreenBackground">@color/brand_primary</item>
+
+        <!-- The icon in the middle -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+
+        <!-- Theme to switch to after the splash screen -->
+        <item name="postSplashScreenTheme">@style/Theme.PocketLock</item>
+    </style>
 </resources>
